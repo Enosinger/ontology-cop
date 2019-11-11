@@ -363,6 +363,9 @@
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/LocalUsage"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Management"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Modularity"/>
     </Declaration>
     <Declaration>
@@ -1210,6 +1213,10 @@
     <SubClassOf>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/KnowledgeUsage"/>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/BuildingBlocks"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Management"/>
+        <Class IRI="http://webprotege.stanford.edu/RTO8XcGDCZTY01eGezmAiU"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Occasional"/>
@@ -2167,6 +2174,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/LocalUsage</IRI>
         <Literal xml:lang="en">Local Usage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/Management</IRI>
+        <Literal xml:lang="en">Management</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
