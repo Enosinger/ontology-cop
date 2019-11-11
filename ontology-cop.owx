@@ -543,24 +543,6 @@
         <ObjectProperty IRI="http://webprotege.stanford.edu/RwVQrvZ9sMPzQAvuoyv2wV"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/employed-by"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/has-abstractness"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/has-instrumental-functionality"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/has-modularity"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/has-standardization"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/has-symbolic-functionality"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/produces"/>
     </Declaration>
     <Declaration>
@@ -1139,41 +1121,6 @@
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/ParticipationLevel"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/BoundaryObject"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/has-abstractness"/>
-            <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Abstractness"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/BoundaryObject"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/has-instrumental-functionality"/>
-            <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/InstrumentalFunctionality"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/BoundaryObject"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/has-modularity"/>
-            <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Modularity"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/BoundaryObject"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/has-standardization"/>
-            <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Standardization"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/BoundaryObject"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/has-symbolic-functionality"/>
-            <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/SymbolicFunctionality"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Budget"/>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Constraint"/>
     </SubClassOf>
@@ -1215,13 +1162,6 @@
     <SubClassOf>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Employee"/>
         <Class IRI="http://webprotege.stanford.edu/R765u2MYKls8OYgnUI0kSqT"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Employee"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/employed-by"/>
-            <Class IRI="http://webprotege.stanford.edu/R8GJWNwgw1hlBeQ5mgNz6mk"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Externalization"/>
@@ -2362,36 +2302,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/WindingDown</IRI>
         <Literal xml:lang="en">Winding down</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/employed-by</IRI>
-        <Literal xml:lang="en">employed-by</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/has-abstractness</IRI>
-        <Literal xml:lang="en">has-abstractness</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/has-instrumental-functionality</IRI>
-        <Literal xml:lang="en">has-instrumental-functionality</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/has-modularity</IRI>
-        <Literal xml:lang="en">has-modularity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/has-standardization</IRI>
-        <Literal xml:lang="en">has-standardization</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/has-symbolic-functionality</IRI>
-        <Literal xml:lang="en">has-symbolic-functionality</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
