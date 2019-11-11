@@ -1,0 +1,267 @@
+<!DOCTYPE rdf:RDF [
+ <!ENTITY cos "http://www.inria.fr/acacia/corese#">
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+<!ENTITY palette "http://www.inria.fr/acacia/2006/palette#">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY dc "http://purl.org/dc/elements/1.1#">
+ ]>
+<rdf:RDF xmlns:rdfs="&rdfs;" 
+    xmlns:rdf="&rdf;" 
+    xmlns:cos="&cos;" 
+    xmlns:palette='&palette;' 
+    xmlns:owl='&owl;' 
+    xmlns:dc='&dc;' xml:base='&palette;'>
+    <!--nameFile=palette_metamodel_lessonslearnt.rdfs-->
+    <rdf:Description rdf:about="#Activity">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">relates to the
+individual objectives of the actor involved in a process. DEF: The Activity requires the use of
+Lessons learnt in order to be performed. This concept links the Lessons learnt model to the
+Process/Activity model.</rdfs:comment>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activite</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="#Environment">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environment</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environnement</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">refers to the
+context or situation.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="#Lesson_learnt">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the
+knowledge gained or produced as a result to the Activity of CoP members.</rdfs:comment>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lessons learnt</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lessons apprises</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="#Negative_lesson_learnt">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:subClassOf rdf:resource="#Lesson_learnt"/>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Negative lessons
+learnt</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lessons apprises
+negatives</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subclass of the
+Lesson learnt class, they relate to the bad practices of the CoP, the actions or decisions to
+avoid.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="#Positive_lesson_learnt">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:subClassOf rdf:resource="#Lesson_learnt"/>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Positive lessons
+learnt</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lessons apprises
+positives</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subclass of the
+Lesson learnt class, they relate to the good practices of the CoP, they determine the decisions
+or actions that are recommended.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="#Problem">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Problem</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Probleme</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">represents a
+critical point or issue to be analyzed. DEF:it's the reason for being of the Lessons learnt. It
+describes, in the context of an activity or practice, a problematic or critical point whose
+related solutions are analyzed so as to determine the best way to find an issue on
+it.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="#Proposed_solution">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a solution to
+a Problem or a clue to solve it.</rdfs:comment>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proposed solution</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Solution proposee</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="#Resource">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the different
+types of knowledge resources used or produced in the CoP.</rdfs:comment>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resource</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ressource</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="#Feedback">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:subClassOf rdf:resource="#Resource"/>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feedback</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reaction</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">return on
+experience, opinion or assessment based on some criteria.</rdfs:comment>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="#Behaviour">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:subClassOf rdf:resource="#Resource"/>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comportement</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is a kind of
+Resource (subclass), it particularly represents the behavioral characteristics of a member in a
+group, his social interactions among the others, etc.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="#Knowledge">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:subClassOf rdf:resource="#Resource"/>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Knowledge</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connaissance
+theorique</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is a kind of
+Resource (subclass), it particularly represents the theoretical knowledge (procedural or
+declarative).</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="#Skills">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:subClassOf rdf:resource="#Resource"/>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Skills</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Capacites</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a kind of
+Resource (subclass), they particularly relate to the individual capabilities to do
+something.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="#Role">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the role
+played by an actor involved in a process.</rdfs:comment>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Role</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Role</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="#Expert">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:subClassOf rdf:resource="#Role"/>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expert</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expert</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a kind of
+Role (subclass), it represents the situation where a member is considered as Expert, assigning
+him particular tasks in some processes of the CoP. DEF: in the context of Lessons learnt, the
+Expert assesses the proposed solutions, using his expertise and taking into account the
+feedbacks of the Testers.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="#Provider">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:subClassOf rdf:resource="#Role"/>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Provider</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fournisseur</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a kind of
+Role (subclass), where a member furnishes something during a particular
+process.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="#Recipient">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:subClassOf rdf:resource="#Role"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a kind of
+Role (subclass), where a member receives something during a process of the
+CoP.</rdfs:comment>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recipient</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Receveur/Destinataire</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="#Tester">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:subClassOf rdf:resource="#Role"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a kind of
+Role (subclass), where a member tests something during a CoP process and gives his results.
+DEF: in the context of Lessons learnt, the Tester experiments the proposed solutions to a
+problem and gives his feedback.</rdfs:comment>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tester</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Testeur</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="#adjusts">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:range rdf:resource="#Proposed_solution"/>
+        <rdfs:domain rdf:resource="#Feedback"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">le Feedback
+concernant une solution propos\'e9e permet de la corriger, de l'affiner.</rdfs:comment>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adjusts</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ajuste</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="#can_be_composed_of1">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="#Lesson_learnt"/>
+        <rdfs:range rdf:resource="#Resource"/>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">can be composed
+of</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">peut se composer
+de</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">describes the
+relation between two concepts, among which one can, in the context of the CoP, be a part of
+the other.</rdfs:comment>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="#can_be_composed_of2">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="#Proposed_solution"/>
+        <rdfs:range rdf:resource="#Resource"/>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">can be composed
+of</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">peut se composer
+de</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">describes the
+relation between two concepts, among which one can, in the context of the CoP, be a part of
+the other.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="#formalizes">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:range rdf:resource="#Proposed_solution"/>
+        <rdfs:domain rdf:resource="#Lesson_learnt"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the Lessons
+learnt are a synthesis or a formalization of the Proposed solutions to the
+Problem.</rdfs:comment>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">formalizes</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">formalise</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="#identifies">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="#Recipient"/>
+        <rdfs:range rdf:resource="#Problem"/>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">identifies</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">identifie/definit</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">when
+someone identifies something.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="#is_involved_in">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:range rdf:resource="#Environment"/>
+        <rdfs:domain rdf:resource="#Activity"/>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is involved in</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">est impliquee dans</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">where the
+realisation of something implies the realisation of something else.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="#is_related_to">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="#Problem"/>
+        <rdfs:range rdf:resource="#Activity"/>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is related to</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">est lie a/concerne</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">describes a
+link between two concepts.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="#provides">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:range rdf:resource="#Lesson_learnt"/>
+        <rdfs:domain rdf:resource="#Provider"/>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provides</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fournit</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">describes the
+situation where someone furnishes something.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="#tests">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:range rdf:resource="#Proposed_solution"/>
+        <rdfs:domain rdf:resource="#Tester"/>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tests/experiments</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">teste/expérimente</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">describes the
+situation where someone experiments something.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="#validates">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:range rdf:resource="#Proposed_solution"/>
+        <rdfs:domain rdf:resource="#Expert"/>
+        <rdfs:label xml:lang="en-US" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">validates</rdfs:label>
+        <rdfs:label xml:lang="fr-FR" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">valide</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">describes the
+situation where someone validates something.</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
