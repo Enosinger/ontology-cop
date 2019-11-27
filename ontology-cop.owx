@@ -294,9 +294,6 @@
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Capacity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Combination"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Committing"/>
     </Declaration>
     <Declaration>
@@ -318,19 +315,10 @@
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Employee"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Externalization"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Functionality"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/ImplizitesWissen"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/InstrumentalFunctionality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Internalization"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/KnowledgeDevelopment"/>
@@ -343,9 +331,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/KnowledgeManagement"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/KnowledgeManagementPhase"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/KnowledgePreservation"/>
@@ -396,9 +381,6 @@
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/SocialEnvironement"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Socialization"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Standardization"/>
     </Declaration>
     <Declaration>
@@ -409,9 +391,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/SymbolicFunctionality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/TacitKnowledge"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Transactional"/>
@@ -1359,25 +1338,6 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Combination"/>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/KnowledgeDevelopment"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Combination"/>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/KnowledgeManagementPhase"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Combination"/>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/KnowledgeSharing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Combination"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://webprotege.stanford.edu/R7dDXO4xbtWqvyNdDmYk61m"/>
-            <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Internalization"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Committing"/>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Phase"/>
     </SubClassOf>
@@ -1419,38 +1379,8 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Externalization"/>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/KnowledgeDevelopment"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Externalization"/>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/KnowledgeManagementPhase"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Externalization"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://webprotege.stanford.edu/R7dDXO4xbtWqvyNdDmYk61m"/>
-            <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Combination"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/ImplizitesWissen"/>
-        <Class IRI="http://webprotege.stanford.edu/R7mzVdwnQop64gag52I9pB0"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/InstrumentalFunctionality"/>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Functionality"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Internalization"/>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/KnowledgeManagementPhase"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Internalization"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://webprotege.stanford.edu/R7dDXO4xbtWqvyNdDmYk61m"/>
-            <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Socialization"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/KnowledgeDevelopment"/>
@@ -1488,10 +1418,6 @@
             <ObjectProperty IRI="http://webprotege.stanford.edu/R7dDXO4xbtWqvyNdDmYk61m"/>
             <Class IRI="http://webprotege.stanford.edu/REY1Yhcwy0BaciJ2uUp1eN"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/KnowledgeManagementPhase"/>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/KnowledgeManagement"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/KnowledgePreservation"/>
@@ -1583,25 +1509,6 @@
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Phase"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Socialization"/>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/KnowledgeDevelopment"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Socialization"/>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/KnowledgeManagementPhase"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Socialization"/>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/KnowledgeSharing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Socialization"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://webprotege.stanford.edu/R7dDXO4xbtWqvyNdDmYk61m"/>
-            <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Externalization"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/StartingUp"/>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Phase"/>
     </SubClassOf>
@@ -1615,10 +1522,6 @@
     <SubClassOf>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/SymbolicFunctionality"/>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Functionality"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/TacitKnowledge"/>
-        <Class IRI="http://webprotege.stanford.edu/R7mzVdwnQop64gag52I9pB0"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://webprotege.stanford.edu/CoP_Ontology_KM/Transactional"/>
@@ -2514,11 +2417,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/Combination</IRI>
-        <Literal xml:lang="en">Combination</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/Committing</IRI>
         <Literal xml:lang="en">Committing</Literal>
     </AnnotationAssertion>
@@ -2564,11 +2462,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/Externalization</IRI>
-        <Literal xml:lang="en">Externalization</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/Functionality</IRI>
         <Literal xml:lang="en">Functionality</Literal>
     </AnnotationAssertion>
@@ -2579,23 +2472,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/ImplizitesWissen</IRI>
-        <Literal xml:lang="en">Implicit knowledge</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/ImplizitesWissen</IRI>
-        <Literal xml:lang="de">Implizites Wissen</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/InstrumentalFunctionality</IRI>
         <Literal xml:lang="en">Instrumental Functionality</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/Internalization</IRI>
-        <Literal xml:lang="en">Internalization</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2621,16 +2499,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/KnowledgeManagement</IRI>
         <Literal xml:lang="de">Wissensmanagement</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/KnowledgeManagementPhase</IRI>
-        <Literal xml:lang="en">Knowledge management phase</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/KnowledgeManagementPhase</IRI>
-        <Literal xml:lang="de">Wissensmanagement Phase</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2724,11 +2592,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/Socialization</IRI>
-        <Literal xml:lang="en">Socialization</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/Standardization</IRI>
         <Literal xml:lang="en">Standardization</Literal>
     </AnnotationAssertion>
@@ -2746,16 +2609,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/SymbolicFunctionality</IRI>
         <Literal xml:lang="en">Symbolic Functionality</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/TacitKnowledge</IRI>
-        <Literal xml:lang="de">Explizites Wissen</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/CoP_Ontology_KM/TacitKnowledge</IRI>
-        <Literal xml:lang="en">Tacit knowledge</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2827,3 +2680,4 @@
 
 
 <!-- Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi -->
+
